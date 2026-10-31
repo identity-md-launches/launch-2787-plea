@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "PleaToken",
+    "name": "plea",
+    "symbol": "PLEA",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 7000,
+    "initialMarketCapWei": "5000000000000000000000",
+    "remainderTo": "0xee2aaa315cf7ed169f93148d30d24af9318dbb66"
+  },
+  "notes": "PleaToken is a fixed-supply ERC-20 named plea (PLEA) with 18 decimals. Its constructor takes no arguments and mints the entire 1,000,000,000-token supply once to msg.sender, the launch factory. It has no owner, further minting, pause, blacklist or transfer fee. No additional application contracts are deployed. pool.initialPrice records provenance only; the opening price is derived from economics.initialMarketCapWei and token.totalSupply."
+}
